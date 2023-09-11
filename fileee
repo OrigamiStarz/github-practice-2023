@@ -4,10 +4,11 @@ const cans = "red";
 
 const userask = prompt(question);
 
-const isCorrect = userask && userask.toLowerCase() === cans.toLowerCase();
+const isCorrect = (userask) => userask.toLowerCase();
 
 const result = isCorrect
   ?'Congrats! You are correct...'
   :'damn You\'re wrong hahahahaha';
 
 console.log(result);
+
