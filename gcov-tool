@@ -1,14 +1,11 @@
-const userInput = prompt("please enter ur name! :)");
+const question = "What is 1+1?";
+const correct = "2";
+const userAnswer = prompt(question); 
 
-const isNameValid = (name) => /^[A-Za-z]+$/.test(name);
+const isCorrect = correct === userAnswer;
 
-const answerName = (name)=> {
-  if (isNameValid(name)){
-    return "hi " + name;
-  }
-  else 
-    return "please enter aa valid username with only letters";
-}
+const result = isCorrect
+  ? `good job, 1 + 1 is ${correct}.`
+  : `your answer ${userAnswer} is wrong, how do you not know this?!`; 
 
-const sayHi = answerName(userInput);
-console.log(sayHi);
+console.log(result);
