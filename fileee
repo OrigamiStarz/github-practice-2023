@@ -1,0 +1,13 @@
+const question = "What is the first color of the rainbow?";
+
+const cans = "red";
+
+const userask = prompt(question);
+
+const isCorrect = userask && userask.toLowerCase() === cans.toLowerCase();
+
+const result = isCorrect
+  ?'Congrats! You are correct...'
+  :'damn You\'re wrong hahahahaha';
+
+console.log(result);
