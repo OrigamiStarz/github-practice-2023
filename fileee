@@ -7,8 +7,8 @@ const userask = prompt(question);
 const isCorrect = (userask) => userask.toLowerCase();
 
 const result = isCorrect
-  ?'Congrats! You are correct...'
-  :'damn You\'re wrong hahahahaha';
+   ?`Congrats! ${userask} is correct...`
+  :`damn ${userask} is wrong hahahahaha`;
 
 console.log(result);
 
